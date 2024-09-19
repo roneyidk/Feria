@@ -1,0 +1,240 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f0ff;
+    color: #050505;
+    margin: 0;
+    padding: 0;
+    background-image: url(https://th.bing.com/th/id/OIG1.EPIByVfPeo2YGXtwDAsF?w=1024&h=1024&rs=1&pid=ImgDetMain);
+}
+header {
+    background-color: #ddc3f5;
+    padding: 30px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+nav ul li.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-60%);
+}
+
+nav ul li.logo img {
+    max-width: 100px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff69b4;
+    transform: scale(1.1);
+}
+
+main {
+    padding: 80px 20px;
+    text-align: center;
+}
+.product {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    display: inline-block;
+    width: 200px;
+}
+
+button.add-to-cart {
+    background-color: #8b6ea7;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.add-to-cart:hover {
+    background-color: #ddc3f5;
+}
+
+/* Estilos para el carrito */
+.cart {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cart h2 {
+    margin: 0 0 10px 0;
+}
+
+.cart ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cart ul li {
+    margin-bottom: 10px;
+}
+
+.cart ul li span {
+    font-weight: bold;
+}
+
+.cart-total {
+    margin-top: 10px;
+    font-weight: bold;
+}
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+
+}
+.member {
+    flex: 1 1 calc(33.333% - 40px);
+    max-width: calc(33.333% - 40px);
+    box-sizing: border-box;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.photo {
+    flex: 1 1 calc(33.333% - 40px);
+    max-width: calc(33.333% - 40px);
+    box-sizing: border-box;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.photo img {
+    max-width: 100%;
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
+}
+
+.photo:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .photo {
+        flex: 1 1 calc(50% - 40px);
+        max-width: calc(50% - 40px);
+    }
+}
+
+@media (max-width: 480px) {
+    .photo {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+.member img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+.member:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .member {
+        flex: 1 1 calc(50% - 40px);
+        max-width: calc(50% - 40px);
+    }
+}
+
+@media (max-width: 480px) {
+    .member {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+
+    .contact-form {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        background-color: #fff;
+    }
+    
+    .contact-form label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+        color: #8b6ea7; /* Color morado */
+        text-align: left; /* Alineación a la izquierda */
+        font-style: italic; /* Texto en cursiva */
+    }
+    
+    .contact-form input, .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+    }
+    
+    .contact-form button {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: #8b6ea7; /* Color morado */
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .contact-form button:hover {
+        background-color: #ddc3f5; /* Un tono más oscuro de morado */
+    }
+    
